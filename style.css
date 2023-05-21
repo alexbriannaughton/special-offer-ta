@@ -19,7 +19,7 @@ body {
 }
 
 #main-div {
-    border: red solid 2px;
+    /* border: red solid 2px; */
     margin: 0;
     position: absolute;
     top: 50%;
@@ -30,25 +30,90 @@ body {
     width: 696px;
     height: 552px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#title-div {
+/* #title-div {
     border: yellow solid 2px;
-}
+} */
 
 #title-div h1 {
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    margin: 0;
 }
 
 #p-div {
-    border: green solid 2px;
+    /* border: green solid 2px; */
+    width: 522px;
 }
 
 #p-div p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
 
+/* #inputs-div {
+    border: purple solid 1px;
+} */
+
+#inputs-div input {
+    background: #000000;
+    border-radius: 16px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-family: 'SF Pro Display', Fallback, sans-serif;
+}
+
+#inputs-div input::placeholder {
+    color: #FFFFFF;
+}
+
+/* #input-row {
+    border: purple solid 1px;
+} */
+
+#input-row input {
+    width: 48%;
+    border: 2px solid #3D3D3D;
+}
+
+/* #handle-input-div {
+    border: purple solid 1px;
+} */
+
+#handle-input-div input {
+    border: 2px solid #129A14;
+    width: 100%;
+}
+
+#input-fine-print p {
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#button-div button {
+    padding: 16px;
+    width: 343px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    font-family: 'SF Pro Display', Fallback, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
 }
