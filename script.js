@@ -14,5 +14,5 @@ document.getElementById("my-form").addEventListener("submit", function (e) {
     console.log(formData);
 
     document.body.style.backgroundImage = "none";
-    document.body.style.backgroundColor = "#1E1E1E";
+    document.body.style.backgroundColor = "#000000";
 });
