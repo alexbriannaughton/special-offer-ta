@@ -12,13 +12,8 @@ body {
     height: 100%;
     margin: 0;
     position: relative;
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; */
     transition: background 0.2s ease-in-out;
 }
-
-/* this is for the background color change */
 
 #main-div {
     /* border: red solid 2px; */
@@ -37,9 +32,10 @@ body {
     justify-content: space-between;
 }
 
-/* #title-div {
-    border: yellow solid 2px;
-} */
+#title-div {
+    /* border: yellow solid 2px; */
+    width: 553px;
+}
 
 #title-div h1 {
     font-weight: 700;
@@ -85,6 +81,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     font-family: 'SF Pro Display', Fallback, sans-serif;
+    padding: 0;
     padding-left: 15px;
     transition: background .3s;
 }
