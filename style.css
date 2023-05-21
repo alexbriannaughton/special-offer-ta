@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fonts/ -Re gular.woff2') format('woff2'),
+    src: url('fonts/SFProDisplay-Regular2.woff2') format('woff2'),
         url('fonts/SFProDisplay-Regular.woff') format('woff');
 }
 
 html,
 body {
-    background-image: url('images/background.png');
-    background-color: #1E1E1E;
+    background: #1E1E1E url('images/background.png');
     background-size: cover;
     font-family: 'SF Pro Display', Fallback, sans-serif;
     height: 100%;
@@ -16,7 +15,10 @@ body {
     /* background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; */
+    transition: background 0.2s ease-in-out;
 }
+
+/* this is for the background color change */
 
 #main-div {
     /* border: red solid 2px; */
@@ -51,6 +53,10 @@ body {
 #p-div {
     /* border: green solid 2px; */
     width: 522px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #p-div p {
@@ -58,12 +64,18 @@ body {
     font-size: 24px;
     line-height: 100%;
     color: #FFFFFF;
+    margin: 0;
 }
 
-/* #inputs-div {
-    border: purple solid 1px;
-} */
+#inputs-div {
+    /* border: purple solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
 
+/* applied to all 3 inputs */
 #inputs-div input {
     background: #000000;
     border-radius: 16px;
@@ -73,24 +85,34 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     font-family: 'SF Pro Display', Fallback, sans-serif;
+    padding-left: 15px;
+    transition: background .3s;
 }
 
 #inputs-div input::placeholder {
     color: #FFFFFF;
 }
 
-/* #input-row {
-    border: purple solid 1px;
-} */
+#inputs-div input:hover {
+    background: #282828e0;
+}
+
+#input-row {
+    /* border: purple solid 1px; */
+    display: flex;
+    gap: 10px;
+}
 
 #input-row input {
-    width: 48%;
+    flex: 1;
+    width: 50%;
     border: 2px solid #3D3D3D;
 }
 
-/* #handle-input-div {
-    border: purple solid 1px;
-} */
+#handle-input-div {
+    /* border: purple solid 1px; */
+    display: flex;
+}
 
 #handle-input-div input {
     border: 2px solid #129A14;
@@ -116,4 +138,15 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    transition: background .7s;
+}
+
+#button-div button:hover {
+    background: #afafaf;
+}
+
+#button-div button:active > span {
+    position: relative;
+    left: 1.5px;
+    top: 1.5px;
 }

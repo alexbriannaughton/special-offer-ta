@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>tech assessment for SPECIAL OFFER, Inc. </title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -19,30 +19,38 @@
         </div>
         <div id="p-div">
             <p>
-                We are heads down on building this product towards an early alpha launch in Q2 2023.
+                We are heads down on building this product<br>
+                towards an early alpha launch in Q2 2023.
             </p>
             <p>
                 Reserve your handle, share this page and follow us.
             </p>
         </div>
-        <div id="inputs-div">
-            <div id="input-row">
-                <input type="text" id="name" placeholder="Name">
-                <input type="email" id="email" placeholder="Email">
+
+        <form id="my-form">
+            <div id="inputs-div">
+                <div id="input-row">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div id="handle-input-div">
+                    <input type="handle" id="handle" placeholder="Handle">
+                </div>
+                <div id="input-fine-print">
+                    <p>
+                        By entering the above information you are agreeing to receive<br>
+                        emails from or on behalf of SPECIAL OFFER.
+                    </p>
+                </div>
             </div>
-            <div id="handle-input-div">
-                <input type="handle" id="handle" placeholder="Handle">
-            </div>
-            <div id="input-fine-print">
-                <p>
-                    By entering the above information you are agreeing to receive<br>
-                    emails from or on behalf of SPECIAL OFFER.
-                </p>
-            </div>
-        </div>
+        </form>
+
         <div id="button-div">
-            <button>Submit</button>
+            <button form="my-form" type="submit">
+                <span>Submit</span>
+            </button>
         </div>
+        
     </div>
 </body>
 
