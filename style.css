@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/ -Re gular.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Regular.woff') format('woff');
+}
+
+html,
+body {
+    background-image: url('images/background.png');
+    background-color: #1E1E1E;
+    background-size: cover;
+    font-family: 'SF Pro Display', Fallback, sans-serif;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+#main-div {
+    border: red solid 2px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 696px;
+    height: 552px;
+    margin-top: 50px;
+}
+
+#title-div {
+    border: yellow solid 2px;
+}
+
+#title-div h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+#p-div {
+    border: green solid 2px;
+}
+
+#p-div p {
+
+}
