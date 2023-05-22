@@ -11,12 +11,9 @@ body {
     font-family: 'SF Pro Display', Fallback, sans-serif;
     height: 100%;
     margin: 0;
-    position: relative;
-    transition: background 0.2s ease-in-out;
 }
 
 #main {
-    /* border: red solid 2px; */
     margin: 0;
     position: absolute;
     top: 50%;
@@ -33,7 +30,6 @@ body {
 }
 
 header {
-    /* border: yellow solid 2px; */
     width: 553px;
 }
 
@@ -47,7 +43,6 @@ header h1 {
 }
 
 #info-section {
-    /* border: green solid 2px; */
     width: 522px;
     height: 96px;
     display: flex;
@@ -64,7 +59,6 @@ header h1 {
 }
 
 #inputs-div {
-    /* border: purple solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,7 +101,6 @@ header h1 {
 }
 
 #input-row {
-    /* border: purple solid 1px; */
     display: flex;
     gap: 10px;
 }
@@ -119,7 +112,6 @@ header h1 {
 }
 
 #handle-input-div {
-    /* border: purple solid 1px; */
     display: flex;
 }
 
