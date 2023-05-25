@@ -18,3 +18,4 @@ document.getElementById("my-form").addEventListener("submit", function (e) {
 
     console.log(document.body.style.backgroundImage)
 });
+

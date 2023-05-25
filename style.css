@@ -106,7 +106,7 @@ header h1 {
 }
 
 #input-row input {
-    flex: 1;
+    /* flex: 1; */
     width: 50%;
     border: 2px solid #3D3D3D;
 }
@@ -147,8 +147,42 @@ header h1 {
     background: #afafaf;
 }
 
-#button-section button:active > span {
+#button-section button:active>span {
     position: relative;
     left: 1.5px;
     top: 1.5px;
+}
+
+@media only screen and (max-width: 700px) {
+    #main, header, #info-section, #button-section button {
+        width: 90%;
+    }
+
+    #main {
+        margin: 0;
+    }
+
+    #info-section {
+        height: 80px;
+    }
+
+    #info-section p {
+        font-size: 16px;
+    }
+
+    #my-form {
+        height: 146px;
+    }
+
+    #my-form input {
+        height: 46px;
+    }
+
+    #input-row {
+        gap: 5px;
+    }
+
+    #input-fine-print p {
+        font-size: 11px;
+    }
 }
